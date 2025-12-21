@@ -280,22 +280,25 @@
           <h2>Featured Projects</h2>
           <div class="projects-grid">
             <div class="project-card">
-              <h3>🚀 Real-time Event Delivery Platform</h3>
+              <h3>🚀 Real-time Order & Delivery Event Platform</h3>
               <p>
-                Production-ready, event-driven order-delivery platform engineered for high throughput and reliability. It ingests order events with Apache Kafka and uses stateful stream processing (Apache Flink) to maintain order state, detect SLA violations, and emit real-time KPIs and alerts. Processed results are persisted to an analytical lakehouse (Apache Iceberg and Trino) for dashboards and ad-hoc analysis. The solution includes comprehensive observability, CI pipelines, and Docker-based deployment workflows for reproducible, production-grade operations.
-
-
+                End-to-end streaming data platform implementing medallion architecture (Bronze/Silver/Gold) with 
+                Apache Iceberg lakehouse and 5 PyFlink jobs for real-time ETL. Features complex event processing 
+                for SLA breach detection, Redpanda/Kafka event streaming, Trino SQL analytics, and comprehensive 
+                observability via Prometheus/Grafana/Alertmanager. Includes Apache Airflow orchestration, CI/CD 
+                pipelines, and production-grade Docker Compose deployment demonstrating modern data engineering practices.
               </p>
               <a href="https://github.com/Josres/real-time-order-delivery-event-platform" class="project-link" target="_blank">View Project</a>
             </div>
             <div class="project-card">
-              <h3>🤖 MLOps Pipeline & Model Deployment</h3>
+              <h3>🤖 Recommendation & Ranking MLOps Platform</h3>
               <p>
-                End-to-end MLOps solution featuring automated model training, versioning, monitoring, 
-                and deployment. Implements CI/CD for ML models with comprehensive testing and performance 
-                tracking in production environments.
+                Production-grade recommendation system demonstrating complete ML pipeline: ETL with Pandas/Polars, 
+                feature engineering with Feast feature store, LightGBM ranking models with MLflow experiment tracking, 
+                and FastAPI serving achieving &lt;50ms p95 latency. Full observability stack with Prometheus and Grafana 
+                for real-time monitoring, all orchestrated via Docker Compose for reproducible deployments.
               </p>
-              <a href="https://github.com/Josres" class="project-link" target="_blank">View Project</a>
+              <a href="https://github.com/Josres/recommendation-ranking-mlops" class="project-link" target="_blank">View Project</a>
             </div>
             <div class="project-card">
               <h3>🏗️ Modern Data Lakehouse with dbt</h3>
